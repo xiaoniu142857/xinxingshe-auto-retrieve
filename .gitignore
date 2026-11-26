@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets and caches
+.env
+.uv-cache/
+.cache/
+output/
+probe_out/
+
+# Scratch files
+probe*.py
+experiment.py
+pwsh.html
+tmp*/

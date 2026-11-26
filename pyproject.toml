@@ -1,0 +1,18 @@
+[project]
+name = "xinxingshe-auto-retrieve"
+version = "0.1.0"
+description = "抓取信星社 Hydro OJ 作业题目，用 CPRet 查询原题，并输出 VJudge 题单"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+oj2vjudge = "xinxingshe_auto_retrieve.cli:main"
+xinxingshe-auto-retrieve = "xinxingshe_auto_retrieve.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
